@@ -1,0 +1,319 @@
+@font-face {
+  font-family: hels;
+  src: url(./fonts/hells-kittchen-devil-god.bold.otf);
+}
+header {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0;
+
+  word-spacing: 520px;
+  padding-left: 100px;
+}
+#badge {
+  font-family: hels;
+  font-size: xxx-large;
+}
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+.container,
+#slides,
+.row {
+  display: flex;
+}
+.row {
+  flex-direction: column;
+}
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+.images {
+  width: 1050px;
+  height: 650px;
+}
+/* Hide the images by default */
+.mySlides {
+  padding-left: 100px;
+  width: 200px;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: relative;
+  top: 40%;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+}
+/* Position the "next button" to the right */
+.prev {
+  margin-left: -90px;
+}
+.next {
+  position: absolute;
+  margin-left: 950px;
+  top: 45%;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+.demo {
+  width: 200px;
+  height: 163px;
+  margin-left: 950px;
+}
+.ts1,
+.ts2,
+.ts3,
+.ts4,
+.ts5,
+.pan1,
+.pan2,
+.pan3,
+.pan4,
+.pan5 {
+  width: 400px;
+  height: 400px;
+  margin-left: 100px;
+  border: black;
+}
+.ts1 {
+  background: url("./img/shirtss1.jpg") no-repeat;
+  background-size: 350px;
+}
+.ts1:hover {
+  background: url("./img/shirt1.jpg") no-repeat;
+  background-size: 350px;
+}
+.ts2 {
+  background: url("./img/shirtss2.jpg") no-repeat;
+  background-size: 350px;
+}
+.ts2:hover {
+  background: url("./img/shirt2.jpg") no-repeat;
+  background-size: 350px;
+}
+.ts3 {
+  background: url("./img/shirtss3.jpg") no-repeat;
+  background-size: 350px;
+}
+.ts3:hover {
+  background: url("./img/shirt3.jpg") no-repeat;
+  background-size: 350px;
+}
+.ts4 {
+  background: url("./img/shirtss4.jpg") no-repeat;
+  background-size: 350px;
+}
+.ts4:hover {
+  background: url("./img/shirt4.jpg") no-repeat;
+  background-size: 350px;
+}
+.ts5 {
+  background: url("./img/shirtss5.jpg") no-repeat;
+  background-size: 350px;
+}
+.ts5:hover {
+  background: url("./img/shirt5.jpg") no-repeat;
+  background-size: 350px;
+}
+.pan1 {
+  background: url("./img/pan1.jpg") no-repeat;
+  background-size: 350px;
+}
+.pan1:hover {
+  background: url("./img/pants1.jpg") no-repeat;
+  background-size: 350px;
+}
+.pan2 {
+  background: url("./img/pan2.jpg") no-repeat;
+  background-size: 350px;
+}
+.pan2:hover {
+  background: url("./img/pants2.jpg") no-repeat;
+  background-size: 350px;
+}
+.pan3 {
+  background: url("./img/pan3.jpg") no-repeat;
+  background-size: 350px;
+}
+.pan3:hover {
+  background: url("./img/pants3.jpg") no-repeat;
+  background-size: 350px;
+}
+.pan4 {
+  background: url("./img/pan4.jpg") no-repeat;
+  background-size: 350px;
+}
+.pan4:hover {
+  background: url("./img/pants4.jpg") no-repeat;
+  background-size: 350px;
+}
+.pan5 {
+  background: url("./img/pan5.jpg") no-repeat;
+  background-size: 350px;
+}
+.pan5:hover {
+  background: url("./img/pants5.jpg") no-repeat;
+  background-size: 350px;
+}
+div.scrollmenu {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  border-right: #222;
+}
+.scrollmenu::-webkit-scrollbar {
+  display: none;
+}
+.scrollmenu a {
+  border-right: #222;
+}
+.shirts,
+.Pants {
+  margin-top: 100px;
+  font-family: hels;
+  font-size: 50px;
+}
+.head {
+  margin-left: 100px;
+}
+.products {
+  display: flex;
+  flex-direction: column;
+}
+.navigation {
+  display: flex;
+  gap: 30px;
+  margin-left: 100px;
+}
+#male,
+#female {
+  background-color: black;
+  display: none;
+  margin-left: 100px;
+  border-radius: 20px;
+}
+#flexx,
+#flexxx {
+  display: flex;
+  line-height: 40px;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.sh:link {
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.sh:visited {
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.sh:hover {
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.sh:active {
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  text-decoration: underline;
+}
+#right,
+#rightt {
+  margin-left: 100px;
+}
+#what,
+#whatt {
+  color: white;
+}
+#pic,
+#picc {
+  width: 100px;
+}
+.arrow {
+  font-size: 30px;
+}
+.topP {
+  height: 300px;
+}

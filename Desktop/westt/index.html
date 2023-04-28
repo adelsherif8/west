@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>West</title>
+    <link rel="stylesheet" href="./stylesheet.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div>HOME <span id="badge">West</span> ORDER</div>
+      </nav>
+    </header>
+    <div class="container">
+      <div id="slides">
+        <div class="mySlides">
+          <div class="numbertext">1 / 4</div>
+          <img class="images" src="./img/top.jpg" />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 4</div>
+          <img class="images" src="./img/top2.jpg" />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 4</div>
+          <img class="images" src="./img/top3.jpg" />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 4</div>
+          <img class="images" src="./img/top4.jpg" />
+        </div>
+      </div>
+      <div id="but">
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./img/top.jpg"
+            onclick="currentSlide(1)"
+            alt="The Woods"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./img/top2.jpg"
+            onclick="currentSlide(2)"
+            alt="Cinque Terre"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./img/top3.jpg"
+            onclick="currentSlide(3)"
+            alt="Mountains and fjords"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./img/top4.jpg"
+            onclick="currentSlide(4)"
+            alt="Northern Lights"
+          />
+        </div>
+      </div>
+    </div>
+    <section class="navigation">
+      <div onclick="drop()" id="men">Men <span class="arrow">🡃</span></div>
+      <div onclick="drop2()" id="woman">Woman <span class="arrow">🡃</span></div>
+    </section>
+    <div id="male">
+      <div id="flexx">
+        <div id="left">
+          <div class="sh"><a class="sh" href="#shirts">shirts</a></div>
+          <div class="sh"><a class="sh" href="#pants">Pants</a></div>
+          <div class="sh"><a class="sh" href="#shirts">bags</a></div>
+          <div class="sh"><a class="sh" href="#shirts">wallets</a></div>
+        </div>
+
+        <div id="right">
+          <div id="what">Whats hot</div>
+          <div><img id="pic" src="./img/shirt1.jpg" /></div>
+        </div>
+      </div>
+    </div>
+    <div id="female">
+      <div id="flexxx">
+        <div id="leftt">
+          <div class="sh"><a class="sh" href="#shirts">shirts</a></div>
+          <div class="sh"><a class="sh" href="#pants">Pants</a></div>
+          <div class="sh"><a class="sh" href="#shirts">bags</a></div>
+          <div class="sh"><a class="sh" href="#shirts">wallets</a></div>
+        </div>
+
+        <div id="rightt">
+          <div id="whatt">Whats hot</div>
+          <div><img id="picc" src="./img/shirt1.jpg" /></div>
+        </div>
+      </div>
+    </div>
+    <section id="products">
+      <div class="shirts">
+        <div class="head">Shirts</div>
+        <div class="scrollmenu">
+          <a href=""><div class="ts1"></div></a>
+          <a href=""><div class="ts2"></div></a>
+          <a href=""><div class="ts3"></div></a>
+          <a href=""><div class="ts4"></div></a>
+          <a href=""><div class="ts5"></div></a>
+        </div>
+      </div>
+      <div class="Pants">
+        <div class="head">Pants</div>
+        <div class="scrollmenu">
+          <a href=""><div class="pan1"></div></a>
+          <a href=""><div class="pan2"></div></a>
+          <a href=""><div class="pan3"></div></a>
+          <a href=""><div class="pan4"></div></a>
+          <a href=""><div class="pan5"></div></a>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="./java.js"></script>
+</html>
